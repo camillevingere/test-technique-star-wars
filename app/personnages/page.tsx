@@ -76,6 +76,11 @@ export default function CharactersPage({
   const totalPages =
     data.length === 0 ? 0 : Math.floor(data.length / CHARACTERPERPAGE);
 
+  const dataPage =
+    searchValue || height || gender || mass
+      ? data
+      : data.slice(CHARACTERPERPAGE * (page - 1), CHARACTERPERPAGE * page);
+
   return (
     <Layout className="mt-0 flex">
       <LayoutHeader className="flex-1 items-center">
@@ -152,7 +157,7 @@ export default function CharactersPage({
       </LayoutHeader>
       <LayoutContent className="mt-8 flex flex-col gap-8">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {data.map((character: CharacterType) => (
+          {dataPage.map((character: CharacterType) => (
             <CharacterCard
               key={character.name}
               data={character}

@@ -83,7 +83,7 @@ export default function CharactersPageLoading() {
       </LayoutHeader>
       <LayoutContent className="mt-8 flex flex-col gap-8">
         <div className="grid grid-cols-3 gap-4">
-          {Array.from({ length: 10 }).map((_, i) => (
+          {Array.from({ length: 9 }).map((_, i) => (
             <CharacterCardSkeleton key={i} />
           ))}
         </div>
