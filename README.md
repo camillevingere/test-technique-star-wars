@@ -1,8 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br>
+<p align="center">
+  <a href="https://www.twenty.com">
+    <img src="./public/images/logo-star-wars.svg" width="100px" alt="Twenty logo" />
+  </a>
+</p>
 
-## Getting Started
+<h2 align="center" >Test technique Star Wars </h3>
+<p align="center">Pour l'entreprise BeesBusy</p>
 
-First, run the development server:
+<p align="center"><a href="https://test-technique-star-wars.vercel.app/">🌐 Website</a><p>
+<br />
+
+<p align="center">
+  <a href="https://www.twenty.com">
+    <picture>
+      <img src="./public/images/screen-homepage.png" alt="Companies view" />
+    </picture>
+  </a>
+</p>
+<br>
+
+<br>
+
+# Démo
+
+J'ai déployé l'application sur Vercel. C'est donc possible de tester via ce lien <a href="https://test-technique-star-wars.vercel.app/">test-technique-star-wars.vercel.app/</a>
+
+<br>
+
+# Énoncé
+
+## Objectif
+
+Le but est de créer une application Web "Personnages de Star Wars". L'application est composée d'une API déjà existante de recherche des personnages de la série de films couplée à une interface Web à développer pour la consultation de ces données.
+
+## API
+
+L’URL de l’API est https://swapi.py4e.com/api/people/
+
+Sa documentation de trouve à la page : https://swapi.py4e.com/documentation#people
+
+## Développement de l’application front Web
+
+L’application doit proposer au minimum les fonctionnalités suivantes :
+
+- Développer une interface utilisateur conviviale en utilisant React JS et ses Hooks.
+- Privilégier l’utilisation de TypeScript tout en respectant les normes ES6.
+- Lister les personnages des films Star Wars.
+- Mettre en place un système de filtres, permettant de spécifier des critères comme le nom/prénom, la taille, le poids et le(s) film(s).
+- Mettre en place un système de pagination si le nombre de personnage est important.
+- Permettre la consultation du détail d'un personnage avec les informations suivantes :
+  - Nom/prénom
+  - Taille
+  - Poids
+  - Couleur des cheveux
+  - Couleur des yeux
+  - Genre
+  - Films
+  - Dates de création et de dernière modification au format JJ/MM/AAAA
+
+Pouvoir naviguer du détail d’un personnage à un autre personnage sans avoir à revenir sur la liste des résultats.
+
+Notre attention se portera particulièrement sur :
+
+- la clarté de l'interface produite.
+
+- la simplicité d'utilisation de ses fonctionnalités.
+
+- la structure choisie pour l'API.
+
+- la qualité et l'organisation du code associé.
+
+L'idée est de passer le temps que vous voulez/pouvez pour réaliser le test, dans la limite d'une journée de travail au maximum.
+
+Le cadre est ouvert : n'hésitez pas à faire des choix en fonction du temps dont vous disposez, ou bien à l'inverse à ajouter des fonctionnalités ou des éléments que vous jugerez utiles.
+
+Une fois terminé, le développement pourra être mis sur GitHub ou GitLab pour que nous puissions en prendre connaissance.
+
+<br>
+
+## Pour commencer
+
+Pour lancer le serveur de développement:
 
 ```bash
 npm run dev
@@ -14,23 +93,4 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Ouvrez [http://localhost:3000](http://localhost:3000) avec votre navigateur pour voir le résultat.
